@@ -1,7 +1,13 @@
+import Header from "./components/Header"
+import Presentation from "./components/Presentation"
+
 function App() {
   return (
     <>
-    <h1>olá mundo</h1>
+      <Header/>
+      <main>
+        <Presentation/>
+      </main>
     </>
   )
 }

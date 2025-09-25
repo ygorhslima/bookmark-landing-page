@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root{
     --Blue600: hsl(231, 69%, 60%);
     --Red400: hsl(0, 94%, 66%);
@@ -9,4 +11,16 @@
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+body,html{
+    background-color: var(--Grey50);
+    font-family: 'rubik','Arial','Helvetica',sans-serif;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-auto-rows: 1fr;
+    background-color: white;
 }

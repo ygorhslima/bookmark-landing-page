@@ -1,0 +1,28 @@
+:root{
+    --Blue600: hsl(231, 69%, 60%);
+    --Red400: hsl(0, 94%, 66%);
+    --Grey50: hsl(0, 0%, 97%);
+    --Blue950: hsl(229, 31%, 21%);
+}
+
+.container-presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    color: var(--Blue950);
+    grid-area: 1/2/-1/-1;
+}
+.content-presentation{
+
+}
+.content-presentation h1{
+    margin-bottom: 15px;
+    font-size: 2.8em;
+}
+.content-presentation .img{
+
+}
+.container-presentation .img div{
+}
