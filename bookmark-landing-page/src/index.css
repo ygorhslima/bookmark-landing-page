@@ -1,0 +1,12 @@
+:root{
+    --Blue600: hsl(231, 69%, 60%);
+    --Red400: hsl(0, 94%, 66%);
+    --Grey50: hsl(0, 0%, 97%);
+    --Blue950: hsl(229, 31%, 21%);
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
