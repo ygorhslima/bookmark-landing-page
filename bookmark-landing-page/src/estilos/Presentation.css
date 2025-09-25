@@ -15,12 +15,51 @@
     grid-area: 1/2/-1/-1;
 }
 .content-presentation{
-
+    display: flex;
+    flex-direction: column;
 }
 .content-presentation h1{
     margin-bottom: 15px;
     font-size: 2.8em;
 }
+.content-presentation p{
+    line-height: 1.4em;
+}
+.content-presentation .links-get-extension{
+    display: flex;
+    justify-content: space-evenly;
+    width: 55%;
+    margin-top: 10px;
+}
+.content-presentation div a{
+    padding: 15px;
+    margin: 10px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+.content-presentation div .link-get-chrome{
+    background-color: var(--Blue600);
+    color: var(--Grey50);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.288);
+    border-radius: 10px;
+}
+.content-presentation div .link-get-chrome:hover{
+    background-color: var(--Grey50);
+    outline: 1px solid var(--Blue600);
+    color: var(--Blue600);
+}
+
+.content-presentation div .link-get-firefox{
+    background-color: var(--Grey50);
+    color: var(--Blue950);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.288);
+    border-radius: 10px;
+}
+.content-presentation div .link-get-firefox:hover{
+    outline: 1px solid var(--Red400);
+    color: var(--Red400);
+}
+
 .content-presentation .img{
 
 }

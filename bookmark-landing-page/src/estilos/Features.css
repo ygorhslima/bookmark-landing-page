@@ -1,0 +1,85 @@
+:root{
+    --Blue600: hsl(231, 69%, 60%);
+    --Red400: hsl(0, 94%, 66%);
+    --Grey50: hsl(0, 0%, 97%);
+    --Blue950: hsl(229, 31%, 21%);
+}
+
+.container-features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content h1{margin: 10px;}
+.content p{line-height: 1.4em; margin: 10px;}
+
+.buttons-features button{
+    border: none;
+    background: none;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 4px solid lightgray;
+    cursor: pointer;
+    transition: border-color 0.3s ease; /* animação suave */
+}
+
+.buttons-features button.ativo{
+    border-bottom: 4px solid var(--Red400);
+}
+
+/*  configurações específicas para o slide no Features*/
+.slide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 30px;
+
+}
+.slide .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    color: var(--Blue950);
+}
+.slide .item .img{
+    margin: 10px;
+    height: 400px;
+}
+.slide .item .img img{
+    height: 100%;
+}
+.slide .item .content{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 25%;
+}
+.slide .item .content h2{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.slide .item .content p{
+    font-size: 20px;
+}
+.slide .item .content .buttonList{
+    background-color: var(--Blue600);
+    text-decoration: none;
+    color: var(--Grey50) !important;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+.slide .item .content .buttonList:hover{
+    background-color: var(--Blue950);
+}
+

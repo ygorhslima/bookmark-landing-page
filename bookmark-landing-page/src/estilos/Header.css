@@ -12,13 +12,6 @@ header{
     align-items: center;
     padding: 15px;
 }
-.header-img{
-
-}
-
-.header-img img{
-
-}
 
 .header-buttons{
     display: flex;
@@ -48,5 +41,5 @@ header{
 .btn-login:hover{
     background-color: var(--Grey50);
     color: var(--Red400)!important;
-    border: 1px solid var(--Red400);
+    outline: 1px solid var(--Red400);
 }
