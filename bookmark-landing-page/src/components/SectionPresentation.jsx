@@ -1,9 +1,9 @@
 import '../estilos/Presentation.css'
 import illustrationHero from '../images/illustration-hero.svg'
 
-export default function Presentation(){
+export default function SectionPresentation(){
     return(
-        <div className='container-presentation'>
+        <section className='container-presentation'>
             <div className="content-presentation">
                 <h1>A Simple Bookmark Manager</h1>
                 <p>
@@ -18,6 +18,6 @@ export default function Presentation(){
                 <img src={illustrationHero} alt="illustraton-hero" />
                 <div></div>
             </div>
-        </div>
+        </section>
     )
 }

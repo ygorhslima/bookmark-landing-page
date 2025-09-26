@@ -5,7 +5,7 @@ import tab1IMG from '../images/illustration-features-tab-1.svg'
 import tab2IMG from '../images/illustration-features-tab-2.svg'
 import tab3IMG from '../images/illustration-features-tab-3.svg'
 
-export default function Features() {
+export default function SectionFeatures() {
   const [ativo, setAtivo] = useState(0)
 
   const lista = [
@@ -40,15 +40,9 @@ export default function Features() {
       </div>
 
       <div className="buttons-features">
-        <button onClick={() => setAtivo(0)} className={ativo === 0 ? "ativo" : ""}>
-          Simple Bookmarking
-        </button>
-        <button onClick={() => setAtivo(1)} className={ativo === 1 ? "ativo" : ""}>
-          Speedy Searching
-        </button>
-        <button onClick={() => setAtivo(2)} className={ativo === 2 ? "ativo" : ""}>
-          Easy Sharing
-        </button>
+        <button onClick={() => setAtivo(0)} className={ativo === 0 ? "ativo" : ""}>Simple Bookmarking</button>
+        <button onClick={() => setAtivo(1)} className={ativo === 1 ? "ativo" : ""}>Speedy Searching</button>
+        <button onClick={() => setAtivo(2)} className={ativo === 2 ? "ativo" : ""}>Easy Sharing</button>
       </div>
 
       <div className="slide">

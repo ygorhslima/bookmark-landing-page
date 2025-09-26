@@ -1,7 +1,7 @@
-import Features from "./components/Features"
 import Header from "./components/Header"
-import Presentation from "./components/Presentation"
-
+import Features from "./components/SectionFeatures"
+import Presentation from "./components/SectionPresentation"
+import Extensions from "./components/SectionExtensions"
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <main>
         <Presentation/>
         <Features/>
+        <Extensions/>
       </main>
     </div>
   )
