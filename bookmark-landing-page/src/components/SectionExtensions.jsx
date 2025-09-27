@@ -34,6 +34,12 @@ export default function SectionExtensions(){
             </div>
             <div className="list">
                 {
+                    /*
+                    
+                    esta lista será repetida de acordo com os dados que estão dentro do useState lista
+                    o map vai iterar cada imagem, título, descrição e o texto do botão para cada .item
+                    
+                    */
                     lista.map(({img,title,description,buttonText}, index)=>(
                         <div className="item" key={index} id={'item'+index}>
                             <img src={img} alt={title} />
@@ -43,7 +49,6 @@ export default function SectionExtensions(){
                         </div>
                     ))
                 }
-                {console.log(lista)}
             </div>
         </section>
     )

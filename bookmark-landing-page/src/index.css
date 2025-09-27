@@ -21,6 +21,5 @@ body,html{
 main{
     display: grid;
     justify-content: center;
-    align-content:center; 
-    grid-auto-rows: 1fr;
+    align-content:center;
 }

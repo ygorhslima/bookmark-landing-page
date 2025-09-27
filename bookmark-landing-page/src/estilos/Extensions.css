@@ -11,7 +11,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
 }
 .list{
     display: flex;
@@ -24,10 +23,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 1px 1px 15px black;
+    box-shadow: 1px 1px 10px black;
     width: 30%;
     gap: 10px;
     height: 400px;
@@ -54,6 +52,10 @@
     padding: 10px 15px 10px 15px;
     border-radius: 20px;
     font-size: 12px;
+    transition: 0.7s;
+}
+.list .item .button-extensions:hover{
+    opacity: 0.8;
 }
 
 #item0{
