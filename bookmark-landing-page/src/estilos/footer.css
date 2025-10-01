@@ -1,6 +1,45 @@
+:root{
+    --Blue600: hsl(231, 69%, 60%);
+    --Red400: hsl(0, 94%, 66%);
+    --Grey50: hsl(0, 0%, 97%);
+    --Blue950: hsl(229, 31%, 21%);
+}
+
 footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    background-color: black;
+}
+.container-footer-contact-us{
+    background-color: var(--Blue600);
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    color: var(--Grey50);
+}
+.container-footer-contact-us p{
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+.container-footer-contact-us h1{
+    margin: 10px;
+}
+.container-footer-contact-us .container-form{
+    margin: 15px;
+}
+.container-footer-contact-us .container-form input{
+    margin-right: 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+.container-footer-contact-us .container-form button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Red400);
+    color: var(--Grey50);
 }

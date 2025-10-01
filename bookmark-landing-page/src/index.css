@@ -17,9 +17,3 @@ body,html{
     background-color: var(--Grey50);
     font-family: 'rubik','Arial','Helvetica',sans-serif;
 }
-
-main{
-    display: grid;
-    justify-content: center;
-    align-content:center;
-}
