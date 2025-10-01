@@ -43,3 +43,32 @@ header{
     color: var(--Red400)!important;
     outline: 1px solid var(--Red400);
 }
+
+.hamburger{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+    .header-buttons{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 70%;
+        background-color: var(--Grey50);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: left 0.3s ease;
+    }
+    .header-buttons.ativo{
+        left: 0;
+    }
+}

@@ -64,3 +64,9 @@
     align-items: flex-start;
     margin: 10px;
 }
+
+@media screen and (max-width) {
+    .container-question{
+        
+    }
+}

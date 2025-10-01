@@ -60,8 +60,36 @@
     color: var(--Red400);
 }
 
-.content-presentation .img{
 
-}
-.container-presentation .img div{
+@media screen and (max-width:768px) {
+    .container-presentation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-presentation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-presentation h1{
+        font-size: 1.5em;
+    }
+    .container-presentation p{
+        font-size: 0.9em;
+    }
+    .links-get-extension{
+        font-size: 13px;
+    }
+    .img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .img img{
+        width: 70%;
+    }
 }

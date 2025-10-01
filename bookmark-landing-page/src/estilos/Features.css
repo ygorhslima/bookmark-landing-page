@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .content{
@@ -83,3 +84,37 @@
     background-color: var(--Blue950);
 }
 
+@media screen and (max-width: 768px) {
+    .container-features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .content p{
+        font-size: 14px;
+    }
+
+    .slide{
+        display: flex;
+    }
+    .slide .item{
+        display: flex;
+        flex-direction: column;
+    }
+    .slide .item .img{
+        width: 100%;
+        height: auto;
+    }
+    .slide .item .content{
+        width: 100%;
+    }
+    .item .img{
+        width: 40%;
+        height: 40%;
+    }
+    .item .content{
+        display: flex;
+        flex-direction: column;
+    }
+}

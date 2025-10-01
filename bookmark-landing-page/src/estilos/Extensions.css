@@ -53,6 +53,7 @@
     border-radius: 20px;
     font-size: 12px;
     transition: 0.7s;
+    cursor: pointer;
 }
 .list .item .button-extensions:hover{
     opacity: 0.8;
@@ -69,4 +70,26 @@
 #item2{
     position: relative;
     top: 20%;
+}
+
+@media screen and (max-width:768px) {
+    .container-extensions{
+        flex-direction: column;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+    .list .item{
+        width: 100%;
+        box-shadow: none;
+    }
+    .list .item img{
+        width: 40%;
+    }
+    #item0, #item1, #item2{
+        top: 0%;
+    }
 }
