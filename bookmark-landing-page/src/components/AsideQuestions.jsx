@@ -57,6 +57,7 @@ export default function AsideQuestions(){
                     })
                 }
             </div>
+            <button className="button-question">More info</button>
         </aside>
     )
 }
