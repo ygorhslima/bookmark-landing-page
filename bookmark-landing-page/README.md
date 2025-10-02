@@ -1,16 +1,16 @@
-# React + Vite
+Bookmark - Desafio do frontend mentor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Visão geral
 
-Currently, two official plugins are available:
+Segundo projeto feito com React do frontend mentor, este projeto me desafiei a criar todas as funcionalidades possíveis para que o projeto ficasse muito bom, é um projeto de gerenciador de extensões de navegador fictícios, é um site que utilizei técnicas de estilização CSS, organização de componentes no React, listas dinâmicas, Menu interativo para versão de celular, utilização do método map para repetir itens HTML que tem padrões. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Componentes criados
 
-## React Compiler
+**Header.jsx**: parte criado para o cabeçalho do site, neste componente criei botões de login com animações de transições suaves e o gerenciamento do menu
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Main.jsx**: Componente responsável por renderizar toda a parte do conteúdo do site, ele é somente um componente que vai englobar os seus componentes filhos (childrens), aplicando uma estilização básica de Grid layout para centralizar os componentes.
 
-## Expanding the ESLint configuration
+## funcionalidades criadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Menu para mobile: utilizei técnica de renderização condicional do React para renderizar dois tipos de menu, o menu que vai aparecer no modo desktop, e o menu do modo mobile, gerenciados por um estado chamado menuAberto que vai verificar se o menu para celular está ou não aberto
+- 
