@@ -22,9 +22,15 @@ export default function AsideQuestions(){
 
     const [ativo,setAtivo]=useState(null)
 
+    const inverterArrowButton =(isOpen)=>{
+        /**função que inverte o ícone do arrow button verificando se está ativo aberto ou não, se estiver aberto */
+        return isOpen ? <i class='fa-solid fa-chevron-up'></i>:<i class='fa-solid fa-chevron-down'></i>
+    }
 
-    const inverterArrowButton =(isOpen)=>{return isOpen ? <i class='fa-solid fa-chevron-up'></i> : <i class='fa-solid fa-chevron-down'></i>}
-    const handleToggle = (index)=>{setAtivo(ativo === index ? null : index)}
+    const handleToggle = (index)=>{
+        /**vai obter o valor do índice e vai modificar o estado do ativo, se o ativo for igual ao índice retorna nulo, senão retorna o índice  */
+        setAtivo(ativo === index ? null : index)
+    }
 
     return(
         <aside className="container-question">
@@ -37,16 +43,18 @@ export default function AsideQuestions(){
             <div className="list-questions">
                 {
                     lista.map(({title,description},index)=>{
+                        /**variável isOpen recebe um valor ativo se for igual ao índice */
                         const isOpen = ativo === index
                         return(
                             <div className="item" key={index}>
                                 <div className="item-topic">
                                     <h2>{title}</h2>
+                                    {/**quando o botão for clicado vai executar a função handleToggle e a função de inverter o ícone do botão*/}
                                     <button className="btn_arrow" onClick={()=>{handleToggle(index)}}>
                                         {inverterArrowButton(isOpen)}
                                     </button>
                                 </div>
-                                
+                                {/**se isOpen for verdadeiro então vai abrir a descrição clicada */}
                                {isOpen && (
                                 <div className="container-description">
                                     <p>{description}</p>
